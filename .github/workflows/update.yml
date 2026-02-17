@@ -1,32 +1,39 @@
-name: CCTV_Auto_Update
+name: Live_Source_Master
 
 on:
   schedule:
-    - cron: '0 */6 * * *' # 每 6 小时自动更新一次
-  workflow_dispatch: # 允许你手动点击运行
+    - cron: '0 */6 * * *' # 每6小时自动运行一次
+  workflow_dispatch:      # 允许手动点击运行
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    # 授予机器人写入权限，防止 Exit Code 128 错误
+    permissions:
+      contents: write
+      
     steps:
-      - name: 1. 拉取代码
+      - name: 1. 拉取仓库代码
         uses: actions/checkout@v3
 
-      - name: 2. 初始化 Python
+      - name: 2. 安装 Python 环境
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
 
-      - name: 3. 安装依赖
-        run: pip install -r requirements.txt
+      - name: 3. 直接安装依赖库
+        run: pip install httpx
 
-      - name: 4. 执行抓取脚本
+      - name: 4. 执行核心抓取脚本
         run: python make_live.py
 
-      - name: 5. 提交并同步到仓库
+      - name: 5. 提交并同步文件到 GitHub
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add cctv.m3u
-          git commit -m "Update CCTV sources" || exit 0
+          # 将生成的直播源和说明文档一起添加
+          git add cctv.m3u README.md
+          # 只有在文件有变化时才提交，防止任务报错
+          git commit -m "自动同步：更新直播源及CDN链接" || exit 0
           git push
+
