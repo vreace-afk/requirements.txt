@@ -1,13 +1,13 @@
-#EXTM3U
-#EXTINF:-1 group-title="央视频道" tvg-name="CCTV1",CCTV-1 综合
+#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+#EXTINF:-1 tvg-name="CCTV1" group-title="央视频道",CCTV-1 综合
 http://39.134.115.163:8080/PLTV/88888888/224/3221225618/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-name="CCTV6",CCTV-6 电影
+#EXTINF:-1 tvg-name="CCTV6" group-title="央视频道",CCTV-6 电影
 http://39.134.115.163:8080/PLTV/88888888/224/3221225633/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-name="CCTV13",CCTV-13 新闻
+#EXTINF:-1 tvg-name="CCTV13" group-title="央视频道",CCTV-13 新闻
 http://39.134.115.163:8080/PLTV/88888888/224/3221225579/index.m3u8
-#EXTINF:-1 group-title="地方卫视" tvg-name="湖南卫视",湖南卫视
+#EXTINF:-1 tvg-name="湖南卫视" group-title="地方卫视",湖南卫视
 http://223.110.243.136/PLTV/3/224/3221227226/index.m3u8
-#EXTINF:-1 group-title="地方卫视" tvg-name="浙江卫视",浙江卫视
+#EXTINF:-1 tvg-name="浙江卫视" group-title="地方卫视",浙江卫视
 http://223.110.243.136/PLTV/3/224/3221227204/index.m3u8
-#EXTINF:-1 group-title="地方卫视" tvg-name="江苏卫视",江苏卫视
-http://223.110.243.136/PLTV/3/224/3221227196/index.m3u8
+#EXTINF:-1 tvg-name="东方卫视" group-title="地方卫视",东方卫视
+http://223.110.243.136/PLTV/3/224/3221227166/index.m3u8
