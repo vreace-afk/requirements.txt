@@ -1,9 +1,1 @@
 #EXTM3U
-#EXTINF:-1 group-title="央视频道" tvg-name="CCTV-1",CCTV-1 综合
-http://39.134.115.163:8080/PLTV/88888888/224/3221225618/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-name="CCTV-6",CCTV-6 电影
-http://39.134.115.163:8080/PLTV/88888888/224/3221225633/index.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-name="CCTV-13",CCTV-13 新闻
-http://39.134.115.163:8080/PLTV/88888888/224/3221225579/index.m3u8
-#EXTINF:-1 group-title="地方卫视" tvg-name="湖南卫视",湖南卫视
-http://39.134.65.162/migu/621510489/1.m3u8
