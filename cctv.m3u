@@ -1,5 +1,7 @@
 #EXTM3U
 
+#EXTINF:-1 group-title="央视频道" tvg-name="CCTV",CCTV
+http
 #EXTINF:-1 group-title="地方卫视" tvg-name="北京卫视",北京卫视
 http
 #EXTINF:-1 group-title="地方卫视" tvg-name="东方卫视",东方卫视
