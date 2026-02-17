@@ -1,15 +1,13 @@
 #EXTM3U
 #EXTINF:-1 group-title="央视频道" tvg-name="CCTV1",CCTV-1 综合
-http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8
-#EXTINF:-1 group-title="央视频道" tvg-name="CCTV3",CCTV-3 综艺
-http://ivi.bupt.edu.cn/hls/cctv3hd.m3u8
+http://112.50.243.8/PLTV/88888888/224/3221225821/index.m3u8
 #EXTINF:-1 group-title="央视频道" tvg-name="CCTV6",CCTV-6 电影
-http://ivi.bupt.edu.cn/hls/cctv6hd.m3u8
+http://112.50.243.8/PLTV/88888888/224/3221225835/index.m3u8
 #EXTINF:-1 group-title="央视频道" tvg-name="CCTV13",CCTV-13 新闻
-http://ivi.bupt.edu.cn/hls/cctv13.m3u8
+http://112.50.243.8/PLTV/88888888/224/3221225781/index.m3u8
 #EXTINF:-1 group-title="地方卫视" tvg-name="湖南卫视",湖南卫视
-http://ivi.bupt.edu.cn/hls/hunanhd.m3u8
+http://112.50.243.8/PLTV/88888888/224/3221225893/index.m3u8
 #EXTINF:-1 group-title="地方卫视" tvg-name="浙江卫视",浙江卫视
-http://ivi.bupt.edu.cn/hls/zjhd.m3u8
+http://112.50.243.8/PLTV/88888888/224/3221225909/index.m3u8
 #EXTINF:-1 group-title="地方卫视" tvg-name="东方卫视",东方卫视
-http://ivi.bupt.edu.cn/hls/dfhd.m3u8
+http://112.50.243.8/PLTV/88888888/224/3221225871/index.m3u8
